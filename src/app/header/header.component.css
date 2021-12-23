@@ -1,0 +1,22 @@
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center-elements{
+  justify-content: center;
+}
+
+#header-image-left{
+  margin: 0 10% 0 0;
+}
+
+#header-image-right{
+  margin: 0 0 0 5%;
+}
+nav{
+  font-family: pokemon-font;
+}
+
+
+

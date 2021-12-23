@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'pokemon-font';
+  src: url('./assets/fonts/pokemon-font.eot');
+  src: url('./assets/fonts/pokemon-font.eot?#iefix') format('embedded-opentype'),
+       url('./assets/fonts/pokemon-font.woff2') format('woff2'),
+       url('./assets/fonts/pokemon-font.woff') format('woff'),
+       url('./assets/fonts/pokemon-font.ttf')  format('truetype')
+}
