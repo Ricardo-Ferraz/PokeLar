@@ -17,11 +17,11 @@ export class PokemonListComponent implements OnInit {
 
     this.DataService.getPokemons().subscribe((response: any) => {
       response.results.forEach((element: any) => {
-        this.DataService.getFinalDataPokemon(element.name).subscribe((originalResponse: any) => {
-          this.listPokemons.push(originalResponse);
-          console.log(this.listPokemons);
-        });
+        this.DataService.getFinalDataPokemon(element.name).subscribe((unic: any )=> {
+          this.listPokemons.push(unic);
+        })
       });
     });
+    console.log(this.listPokemons)
   }
 }
