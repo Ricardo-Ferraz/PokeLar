@@ -25,3 +25,4 @@ export class PokemonListComponent implements OnInit {
     console.log(this.listPokemons)
   }
 }
+
