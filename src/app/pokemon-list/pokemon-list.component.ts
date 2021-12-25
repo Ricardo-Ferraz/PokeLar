@@ -8,24 +8,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PokemonListComponent implements OnInit {
   listPokemons: any[]= [];
-  textPokemon: string='Pressione para ver a descrição do pokemon';
+  page= 1;
+  totalPokemons: number=0;
+
 
   constructor(
     private DataService: DataService
   ) { }
 
   ngOnInit(): void {
+    this.getPokemons();
+  }
 
-    this.DataService.getPokemons().subscribe((response: any) => {
+  getPokemons(){
+
+    this.DataService.getPokemons(21, this.page+0).subscribe((response: any) => {
+      this.totalPokemons= response.count;
       response.results.forEach((element: any) => {
         this.DataService.getFinalDataPokemon(element.name).subscribe((unic: any )=> {
           this.listPokemons.push(unic);
         })
       });
     });
-    console.log(this.listPokemons)
   }
-
 }
 
 
