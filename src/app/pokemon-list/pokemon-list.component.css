@@ -46,6 +46,11 @@
     text-align: center;
 }
 
+.text-decrease{
+  font-family: "Flexo-Medium",arial,sans-serif;
+  font-size: 11px;
+}
+
 .background-color-grass{
   background: linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%);
     background-color: #9bcc50;
@@ -167,4 +172,28 @@
 180deg, #4592c4 50%, #4592c4 50%);
     background-color: #4592c4;
     color: #fff;
+}
+
+#hp{
+  background-color: #FF0000!important;
+}
+
+#atk{
+ background-color: #F08030!important;
+}
+
+#def{
+  background-color: #F8D030!important;
+}
+
+#sp-atk{
+  background-color: #6890F0!important;
+}
+
+#sp-def{
+  background-color: #78C850!important;
+}
+
+#spd{
+  background-color: #F85888!important;
 }

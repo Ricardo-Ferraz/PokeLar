@@ -13,7 +13,40 @@
           <hr>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 
+
+          <div class="conteiner-progress">
+            <label for="hp" class="text-decrease">Health points</label>
+            <div class="progress">
+              <div id="hp" class="progress-bar bg-success" role="progressbar" [style.width]="pokemon.stats[0].base_stat+'px'" [attr.aria-valuenow]=" pokemon.stats[0].base_stat " aria-valuemin="0" aria-valuemax="255"> {{ pokemon.stats[0].base_stat }} </div>
+            </div>
+            <label for="atk" class="text-decrease">Attack</label>
+            <div class="progress">
+              <div id="atk" class="progress-bar bg-success" role="progressbar" [style.width]="pokemon.stats[1].base_stat+'px'" [attr.aria-valuenow]=" pokemon.stats[1].base_stat " aria-valuemin="0" aria-valuemax="255"> {{ pokemon.stats[1].base_stat }} </div>
+            </div>
+            <label for="def" class="text-decrease">Defense</label>
+            <div class="progress">
+              <div id="def" class="progress-bar bg-success" role="progressbar" [style.width]="pokemon.stats[2].base_stat+'px'" [attr.aria-valuenow]=" pokemon.stats[2].base_stat " aria-valuemin="0" aria-valuemax="255"> {{ pokemon.stats[2].base_stat }} </div>
+            </div>
+            <label for="sp-atk" class="text-decrease">Special attack</label>
+            <div class="progress">
+              <div id="sp-atk" class="progress-bar bg-success" role="progressbar" [style.width]="pokemon.stats[3].base_stat+'px'" [attr.aria-valuenow]=" pokemon.stats[3].base_stat " aria-valuemin="0" aria-valuemax="255"> {{ pokemon.stats[3].base_stat }} </div>
+            </div>
+            <label for="sp-def" class="text-decrease">Special defense</label>
+            <div class="progress">
+              <div id="sp-def" class="progress-bar bg-success" role="progressbar" [style.width]="pokemon.stats[4].base_stat+'px'" [attr.aria-valuenow]=" pokemon.stats[4].base_stat " aria-valuemin="0" aria-valuemax="255"> {{ pokemon.stats[4].base_stat }} </div>
+            </div>
+            <label for="spd" class="text-decrease">Speed</label>
+            <div class="progress">
+              <div id="spd" class="progress-bar bg-success" role="progressbar" [style.width]="pokemon.stats[5].base_stat+'px'" [attr.aria-valuenow]=" pokemon.stats[5].base_stat " aria-valuemin="0" aria-valuemax="255"> {{ pokemon.stats[5].base_stat }} </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 </div>
+
+
+<script>
+
+</script>
+

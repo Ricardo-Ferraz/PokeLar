@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PokemonListComponent implements OnInit {
   listPokemons: any[]= [];
+  textPokemon: string='Pressione para ver a descrição do pokemon';
 
   constructor(
     private DataService: DataService
@@ -24,5 +25,7 @@ export class PokemonListComponent implements OnInit {
     });
     console.log(this.listPokemons)
   }
+
 }
+
 

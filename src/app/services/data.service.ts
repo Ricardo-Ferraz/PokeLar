@@ -11,10 +11,14 @@ export class DataService {
   ) { }
 
   getPokemons(){
-    return this.http.get('https://pokeapi.co/api/v2/pokemon?limit=98');
+    return this.http.get('https://pokeapi.co/api/v2/pokemon?limit=50');
   }
 
   getFinalDataPokemon(name: string){
     return this.http.get('https://pokeapi.co/api/v2/pokemon/'+name);
+  }
+
+  getData(url: string){
+    return this.http.get(url);
   }
 }
